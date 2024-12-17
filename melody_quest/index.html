@@ -471,9 +471,6 @@ frameborder="1"
     }
 
     function frame_online(url) {
-        window.addEventListener('beforeunload', function (event) {
-              event.stopImmediatePropagation();
-        });
         window.frames["iframe"].location = url;
     }
 
