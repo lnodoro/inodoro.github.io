@@ -474,6 +474,10 @@ frameborder="1"
         window.frames["iframe"].location = url;
     }
 
+    function disableBeforeUnloadPopup() {
+        window.onbeforeunload = null;
+    }
+
     </script>
 
 </body>
